@@ -66,9 +66,13 @@ La plantilla a llenarse contiene las siguientes columnas con los siguientes form
 1. Nombre de Materia -> `string`
 1. Creditos -> `número entero`
 1. Nota -> `número entero`
-1. Comentarios -> `<select> [ N/A, Retirada, Sin Efectos ]`
+1. Comentarios -> `<select> [ N/A, Retirada, Sin Efecto ]`
 
-Es de suma importancia el orden establecido para las columnas, **en caso de cambiarlo, no se garantiza el resultado obtenido**.
+Es de suma importancia los siguientes puntos:
+* El orden establecido para las columnas, **en caso de cambiarlo, no se garantiza el resultado obtenido**.
+* El valor de "*Observaciones*" puede ser no necesariamente "N/A" pero es importante que en los casos correspondientes el valor de esa casilla sea "*Retirada*" o "*Sin Efecto*"
+
+El template también puede conseguirse en el siguiente enlace: [template](https://docs.google.com/spreadsheets/d/1qaVOB9BGMAlpHmo-S8KdfMH_NoQyfcPL/edit?usp=share_link&ouid=116169802522762914319&rtpof=true&sd=true). Se puede descargar y así utilizar desde la raíz del proyecto.
 
 ## Futura Mejoras
 
