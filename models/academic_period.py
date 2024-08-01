@@ -13,10 +13,13 @@ class AcademicPeriod:
 
   def get_valid_courses(self):
     return [course for course in self.courses if not (course.removed or not course.has_effect)]
+  
+  def get_period_courses(self):
+    return [course for course in self.courses if not course.removed]
 
   @property
   def total_credits(self):
-    courses = self.get_valid_courses()
+    courses = self.get_period_courses()
 
     return sum([course.credits for course in courses])
   
@@ -29,7 +32,7 @@ class AcademicPeriod:
 
   @property
   def period_grade(self):
-    courses = self.get_valid_courses()
+    courses = self.get_period_courses()
 
     taken_courses = sum([course.credits for course in courses])
 
